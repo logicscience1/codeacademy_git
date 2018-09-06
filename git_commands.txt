@@ -1,6 +1,6 @@
 git init #starts new git project
 git status #shows status
-git add <filename> #starts tracking file version, adding it to the staging area
+git add <filename_1> <filenamme_2> #starts tracking file version, adding it to the staging area
 git diff <filename>
 git commit -m "message" #permanently stores changes from staging to the repository
 git log #list of commits
@@ -8,4 +8,8 @@ git log #list of commits
 #also see the following getting started webpage
 https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 
+git show HEAD #the commit that you are currently on, most recent commit
+git checkout HEAD <filename> #restores a file back to the last commit
+git reset HEAD <filename> removes a file from staging area, resets staging to last commit,  does not discard changes, just resets the commit
+git reset <commit_sha> #first 7 characters of SHA from git log, rolls back the commits to that one
 
