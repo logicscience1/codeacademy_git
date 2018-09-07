@@ -13,3 +13,8 @@ git checkout HEAD <filename> #restores a file back to the last commit
 git reset HEAD <filename> removes a file from staging area, resets staging to last commit,  does not discard changes, just resets the commit
 git reset <commit_sha> #first 7 characters of SHA from git log, rolls back the commits to that one
 
+git branch #which branch am I on?
+git branch <new_branch> #forks the branch shown by git branch
+git checkout <branch_name> #switches to the new branch. commits on this branch do not affect the hierarchy
+
+ 
