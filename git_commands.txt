@@ -17,4 +17,22 @@ git branch #which branch am I on?
 git branch <new_branch> #forks the branch shown by git branch
 git checkout <branch_name> #switches to the new branch. commits on this branch do not affect the hierarchy
 
+git clone https://github.com/logicscience1/repository #downloads teh repository from github to local machine for work
  
+git merge branch_name #updates master branch with the differences in branch_name
+git branch -d branch_name #will delete branch_name typically after a merge has been done.
+git clone remote_location clone_name #creates a local replica of remote location and names its directory clone_name
+git remote -v #shows a list of git projects remotes
+git fetch #does not merge changes, it brings the changes into a remote branch.
+git merge origin/master #integrates origin/master into local master
+
+The workflow for Git collaborations typically follows this order:
+
+    Fetch and merge changes from the remote
+    Create a branch to work on a new project feature
+    Develop the feature on your branch and commit your work
+    Fetch and merge from the remote again (in case new commits were made while you were working)
+    Push your branch up to the remote for review
+
+git push origin <local branch> #pushes <local branch> up to the remote, origin 
+
