@@ -35,4 +35,5 @@ The workflow for Git collaborations typically follows this order:
     Push your branch up to the remote for review
 
 git push origin <local branch> #pushes <local branch> up to the remote, origin 
+git push -f origin #force push
 
